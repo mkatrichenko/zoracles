@@ -2,6 +2,7 @@
   <div class="container">
     <div>
       <Logo />
+			<Footer />
       <h1 class="title">
         zoracle
       </h1>
@@ -28,7 +29,13 @@
 </template>
 
 <script>
-export default {}
+import Footer from '@/components/Footer.vue'
+export default {
+	name: "index",
+	components: {
+		Footer
+	}
+}
 </script>
 
 <style>
