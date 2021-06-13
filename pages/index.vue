@@ -11,6 +11,7 @@
       :bg-img="item.bgImg"
       :isReversed="item.isReversed"
     />
+		<Footer/>
   </div>
 </template>
 
@@ -43,12 +44,14 @@ const INFO_BLOCKS = [
 import Header from "@/components/Header.vue";
 import Main from "@/components/Main.vue";
 import Info from "@/components/Info.vue";
+import Footer from "@/components/Footer.vue"
 export default {
   name: "App",
   components: {
     Header,
     Main,
-    Info
+    Info,
+		Footer
   },
   data() {
     return {
