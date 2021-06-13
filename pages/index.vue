@@ -40,6 +40,7 @@ export default {
 
 <style>
 .container {
+	max-width: 1440px;
   margin: 0 auto;
   min-height: 100vh;
   display: flex;

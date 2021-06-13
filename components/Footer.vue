@@ -57,7 +57,7 @@
 }
 .tabs {
 	margin: 50px;
-	// width: 25%;
+	width: 25%;
 }
 .template {
 	margin: 20px 0;
