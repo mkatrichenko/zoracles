@@ -45,7 +45,7 @@
 
 <style lang="scss" scoped>
 .footer__container {
-	width: 1440px;
+	max-width: 1440px;
 	font-family: "RobotoCondensed";
   background: #131d41;
   color: #fff;
@@ -57,7 +57,7 @@
 }
 .tabs {
 	margin: 50px;
-	width: 25%;
+	// width: 25%;
 }
 .template {
 	margin: 20px 0;
@@ -82,10 +82,11 @@
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 150%;
+  // line-height: 150%;
 }
 .info p {
-  color: rgba(255, 255, 255, 0.6);
+	color: rgba(255, 255, 255, 0.6);
+	max-width: 300px;
 	font-size: 14px;
 	font-style: normal;
 	font-weight: 400;
@@ -106,6 +107,9 @@
 .form {
 	display: flex;
   flex-direction: row;
+}
+.subscribe {
+
 }
 .input {
   border-radius: 8px;
@@ -129,4 +133,27 @@ input::placeholder {
 	width: 103px;
 	border-radius: 8px;
 }
+
+@media screen and (max-width: 576px) {
+	.intro {
+		flex-direction: column;
+	}
+	.tabs {
+		margin: 20px 50px;
+	}
+	.input {
+		font-size: 12px;
+    height: 46px;
+    width: 130px;
+	}
+	.btn {
+		font-size: 12px;
+    height: 46px;
+    width: 60px;
+	}
+	.info p {
+		max-width: 200px;
+	}
+}
+
 </style>
