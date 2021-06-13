@@ -1,0 +1,98 @@
+<template>
+  <div class="info">
+    <div class="bg" v-if="bgImg">
+      <img :src="bgImg" alt="" class="bg__img" />
+    </div>
+    <div :class="['container', { reverse: isReversed }]">
+      <div class="img__block">
+        <img :src="img" alt="" class="info__img" />
+      </div>
+      <div class="content__block">
+        <h2 class="info__title">{{ title }}</h2>
+        <p class="info__text">{{ text }}</p>
+      </div>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  name: "Info",
+  props: {
+    title: String,
+    text: String,
+    img: String,
+    bgImg: String,
+    isReversed: Boolean
+  }
+};
+</script>
+
+<style scoped lang="scss">
+.info {
+  width: 100%;
+  position: relative;
+
+  .bg {
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    max-width: 1400px;
+    left: 50%;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    height: 100%;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+.container {
+  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  z-index: 3;
+
+  &.reverse {
+    flex-direction: row-reverse;
+  }
+
+  .img__block {
+    max-width: 35%;
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .content__block {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    max-width: 48%;
+
+    .info__title {
+      margin-bottom: 32px;
+      font-family: "Jockey";
+      font-size: 54px;
+      line-height: 36px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+    }
+
+    .info__text {
+      font-family: "RobotoCondensed";
+      font-style: normal;
+      font-weight: normal;
+      font-size: 14px;
+      line-height: 24px;
+      letter-spacing: 0.01em;
+      color: #ffffff;
+    }
+  }
+}
+</style>
