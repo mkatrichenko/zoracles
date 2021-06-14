@@ -11,24 +11,32 @@
       </p>
       <a href="google.com" class="main__btn">see swaps</a>
     </div>
-    <div class="bg">
-      <img src="@/assets/img/main_bg.png" alt="" class="bg__img" />
+    <div class="bg" ref="anim">
+      <!-- <img src="@/assets/img/main_bg.png" alt="" class="bg__img" /> -->
     </div>
   </div>
 </template>
 
 <script>
+import lottie from "lottie-web/build/player/lottie";
 export default {
   name: "Main",
   data() {
     return {
-      isLoaded: false
+      animationNode: null
     };
   },
-  created() {
-    setTimeout(() => {
-      this.isLoaded = true;
-    }, 500);
+  mounted() {
+    this.animationNode = this.$refs.anim;
+    console.log(this.animationNode);
+
+    lottie.loadAnimation({
+      container: this.animationNode, 
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: "lottie/main/data.json" 
+    });
   }
 };
 </script>
@@ -37,6 +45,7 @@ export default {
 .main {
   width: 100%;
   position: relative;
+  // height: 500px;
 
   .content {
     position: absolute;
@@ -44,6 +53,7 @@ export default {
     left: 182px;
     text-align: left;
     max-width: 525px;
+    z-index: 999999999;
   }
 
   .main__title {
@@ -91,76 +101,72 @@ export default {
   // max-width: 1920px;
 }
 
-@media screen and (max-width: 1200px){
-	.main .main__title {
-		margin-bottom: 24px;
-		font-size: 48px;
-	}
-	.main .content {
-		top: 180px;
-		left: 90px;
-	}
-	.main .main__text {
-		width: 400px;
-		font-size: 16px;
-	}
-	.main .main__btn {
-		font-size: 16px;
-		padding: 14px 50px;
-	}
+@media screen and (max-width: 1200px) {
+  .main .main__title {
+    margin-bottom: 24px;
+    font-size: 48px;
+  }
+  .main .content {
+    top: 180px;
+    left: 90px;
+  }
+  .main .main__text {
+    width: 400px;
+    font-size: 16px;
+  }
+  .main .main__btn {
+    font-size: 16px;
+    padding: 14px 50px;
+  }
 }
 @media screen and (max-width: 991.98px) {
-	.main .main__title {
-		margin-bottom: 24px;
-		font-size: 36px;
-	}
-	.main .content {
-		top: 120px;
-		left: 60px;
-	}
-	.main .main__text {
-		width: 330px;
-	}
-	.main .main__btn {
-		font-size: 14px;
-		padding: 12px 40px;
-	}
+  .main .main__title {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+  .main .content {
+    top: 120px;
+    left: 60px;
+  }
+  .main .main__text {
+    width: 330px;
+  }
+  .main .main__btn {
+    font-size: 14px;
+    padding: 12px 40px;
+  }
 }
-@media screen and (max-width: 767.98px) { 
-	.main .main__title {
-		margin-bottom: 24px;
-		font-size: 36px;
-	}
-	.main .content {
-		top: 120px;
-		left: 60px;
-	}
-	.main .main__text {
-		width: 300px;
-	}
+@media screen and (max-width: 767.98px) {
+  .main .main__title {
+    margin-bottom: 24px;
+    font-size: 36px;
+  }
+  .main .content {
+    top: 120px;
+    left: 60px;
+  }
+  .main .main__text {
+    width: 300px;
+  }
 }
 @media screen and (max-width: 576px) {
-	.main .main__title {
-		font-size: 20px;
-		margin-bottom: 8px;
-	}
-	.main .content { 
-		top: 75px;
-		left: 25px;
-	}
-	.main .main__text {
-		font-size: 8px;
-		width: 140px;
-		margin-bottom: 8px;
-		line-height: 1.8;
-	}
-	.main .main__btn {
-		font-size: 10px;
-		padding: 5px 20px;
-	}
+  .main .main__title {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .main .content {
+    top: 75px;
+    left: 25px;
+  }
+  .main .main__text {
+    font-size: 8px;
+    width: 140px;
+    margin-bottom: 8px;
+    line-height: 1.8;
+  }
+  .main .main__btn {
+    font-size: 10px;
+    padding: 5px 20px;
+  }
 }
-
-
-
-
 </style>
