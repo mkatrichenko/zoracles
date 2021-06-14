@@ -161,6 +161,10 @@ export default {
   margin: 0 17px;
   text-decoration: none;
 }
+.nav_link:hover {
+	color: #FF5547;
+	transition: 0.5s;
+}
 
 .buy_btn {
   margin-left: 20px;

@@ -95,4 +95,19 @@ export default {
     }
   }
 }
+@media screen and (max-width: 576px) {
+	.container {
+		display: block;
+		padding: 0 50px;
+	}
+	.container .content__block {
+		margin-bottom: 20px;
+	}
+	.container .content__block .info__title {
+		font-size: 36px;
+	}
+}
+@media (max-width: 767.98px) { 
+	
+}
 </style>

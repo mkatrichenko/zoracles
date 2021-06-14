@@ -11,31 +11,31 @@
       </div>
       <div class="tabs quick__links">
         <h3 class="template">QUICK LINKS</h3>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Docs</a></li>
-          <li><a href="#">NFT Swap</a></li>
-          <li><a href="#">DeFi Prime</a></li>
-          <li><a href="#">Whitepaper</a></li>
-          <li><a href="#">Github</a></li>
+        <ul class="list">
+          <li><a class="link" href="#">Home</a></li>
+          <li><a class="link" href="#">Docs</a></li>
+          <li><a class="link" href="#">NFT Swap</a></li>
+          <li><a class="link" href="#">DeFi Prime</a></li>
+          <li><a class="link" href="#">Whitepaper</a></li>
+          <li><a class="link" href="#">Github</a></li>
         </ul>
       </div>
       <div class="tabs more__links">
         <h3 class="template">MORE LINKS</h3>
-        <ul>
-          <li><a href="#">Discord</a></li>
-          <li><a href="#">Telegram</a></li>
-          <li><a href="#">Medium</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Reddit</a></li>
-          <li><a href="#">YouTube</a></li>
+        <ul class="list">
+          <li><a class="link" href="#">Discord</a></li>
+          <li><a class="link" href="#">Telegram</a></li>
+          <li><a class="link" href="#">Medium</a></li>
+          <li><a class="link" href="#">Twitter</a></li>
+          <li><a class="link" href="#">Reddit</a></li>
+          <li><a class="link" href="#">YouTube</a></li>
         </ul>
       </div>
       <div class="tabs subscribe">
         <h3 class="template">SUBSCRIBE</h3>
         <div class="form">
           <input class="input" type="email" placeholder="Enter your email" required>
-          <button class="btn">Send</button>
+          <button class="btn"><a href="#">Send</a></button>
         </div>
       </div>
     </div>
@@ -45,7 +45,7 @@
 
 <style lang="scss" scoped>
 .footer__container {
-	max-width: 1440px;
+	width: 100%;
 	font-family: "RobotoCondensed";
   background: #131d41;
   color: #fff;
@@ -54,19 +54,31 @@
   display: flex;
 	justify-content: space-between;
 	text-align: left;
+	padding: 0 100px;
 }
 .tabs {
 	margin: 50px;
-	width: 25%;
+	// width: 25%;
 }
 .template {
 	margin: 20px 0;
 }
 .info {
+	width: 400px;
   list-style: none;
   text-decoration: none;
   color: #fff;
 	margin-top: 35px;
+}
+.quick__links {
+	width: 200px;
+}
+.more__links {
+	width: 200px;
+}
+.link:hover {
+	color: #FF5547;
+	transition: 0.5s;
 }
 .intro a {
   color: #fff;
@@ -93,7 +105,7 @@
 	line-height: 24px;
 	letter-spacing: 0.01em;
 	text-align: left;
-
+	padding-top: 20px;
 }
 .intro h3 {
   font-family: "RobotoCondensed";
@@ -109,7 +121,7 @@
   flex-direction: row;
 }
 .subscribe {
-
+	width: 300px;
 }
 .input {
   border-radius: 8px;
@@ -132,11 +144,19 @@ input::placeholder {
 	height: 64px;
 	width: 103px;
 	border-radius: 8px;
+
+		&:hover {
+      opacity: 0.8;
+    }
+}
+.btn a {
+	font-size: 20px;
 }
 
 @media screen and (max-width: 576px) {
 	.intro {
 		flex-direction: column;
+		padding: 0;
 	}
 	.tabs {
 		margin: 20px 50px;

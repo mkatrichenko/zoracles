@@ -86,9 +86,56 @@ export default {
     }
   }
 }
-
 .bg__img {
   width: 100%;
   max-width: 1920px;
+}
+
+@media screen and (max-width: 576px) {
+	.main .main__title {
+		font-size: 24px;
+		margin-bottom: 12px;
+	}
+	.main .content { 
+		top: 75px;
+		left: 25px;
+	}
+	.main .main__text {
+		font-size: 12px;
+		width: 200px;
+		margin-bottom: 8px;
+	}
+	.main .main__btn {
+		font-size: 10px;
+		padding: 5px 20px;
+	}
+}
+
+@media screen and (max-width: 767.98px) { 
+	.main .main__title {
+		margin-bottom: 24px;
+		font-size: 36px;
+	}
+	.main .content {
+		top: 120px;
+		left: 60px;
+	}
+	.main .main__text {
+		width: 300px;
+	}
+}
+
+@media screen and (max-width: 991.98px) {
+		.main .main__title {
+		margin-bottom: 24px;
+		font-size: 36px;
+	}
+	.main .content {
+		top: 120px;
+		left: 60px;
+	}
+	.main .main__text {
+		width: 330px;
+	}
 }
 </style>
