@@ -27,23 +27,23 @@ const INFO_BLOCKS = [
     isReversed: false,
     animationDir: "lottie/1/data.json"
   },
-  // {
-  //   title: "Algorithmic Credit",
-  //   text:
-  //     "We are building an algorithmic approach to credit. Our credit rating will determine creditworthiness and a API will be used in DeFi ecosystem.",
-  //   img: "/info_2.png",
-  //   isReversed: true,
-  //   animationDir: "lottie/2/data.json"
-  // },
-  // {
-  //   title: "Decentralized Governance",
-  //   text:
-  //     "Our developers just write code. Anyone can contribute to the project or join the growing community. Nobody is in charge.",
-  //   img: "/info_3.png",
-  //   bgImg: "/stars_2.png",
-  //   isReversed: false,
-  //   animationDir: "lottie/3/data.json"
-  // }
+  {
+    title: "Algorithmic Credit",
+    text:
+      "We are building an algorithmic approach to credit. Our credit rating will determine creditworthiness and a API will be used in DeFi ecosystem.",
+    img: "/info_2.png",
+    isReversed: true,
+    animationDir: "lottie/2/data.json"
+  },
+  {
+    title: "Decentralized Governance",
+    text:
+      "Our developers just write code. Anyone can contribute to the project or join the growing community. Nobody is in charge.",
+    img: "/info_3.png",
+    bgImg: "/stars_2.png",
+    isReversed: false,
+    animationDir: "lottie/3/data.json"
+  }
 ];
 import Header from "@/components/Header.vue";
 import Main from "@/components/Main.vue";

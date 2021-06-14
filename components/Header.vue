@@ -110,7 +110,7 @@ export default {
   right: 0;
   transition: 0.3s background-color ease-out;
   z-index: 10;
-  background-color: purple;
+  background-color: inherit;
 
   &.scrolled {
     background-color: var(--brand);
