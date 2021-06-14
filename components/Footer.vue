@@ -12,23 +12,23 @@
       <div class="tabs quick__links">
         <h3 class="template">QUICK LINKS</h3>
         <ul class="list">
-          <li><a class="link" href="#">Home</a></li>
-          <li><a class="link" href="#">Docs</a></li>
-          <li><a class="link" href="#">NFT Swap</a></li>
-          <li><a class="link" href="#">DeFi Prime</a></li>
-          <li><a class="link" href="#">Whitepaper</a></li>
-          <li><a class="link" href="#">Github</a></li>
+          <li><a class="link" href="https://zoracles.com/">Home</a></li>
+          <li><a class="link" href="https://zoraclesscribe.gitbook.io/zoracles/">Docs</a></li>
+          <li><a class="link" href="https://nftswaps.org/">NFT Swap</a></li>
+          <li><a class="link" href="https://defiprime.com/zoracles">DeFi Prime</a></li>
+          <li><a class="link" href="https://zoracles.com/whitepaper_v1.pdf">Whitepaper</a></li>
+          <li><a class="link" href="https://github.com/zoracles">Github</a></li>
         </ul>
       </div>
       <div class="tabs more__links">
         <h3 class="template">MORE LINKS</h3>
         <ul class="list">
-          <li><a class="link" href="#">Discord</a></li>
-          <li><a class="link" href="#">Telegram</a></li>
-          <li><a class="link" href="#">Medium</a></li>
-          <li><a class="link" href="#">Twitter</a></li>
-          <li><a class="link" href="#">Reddit</a></li>
-          <li><a class="link" href="#">YouTube</a></li>
+          <li><a class="link" href="https://discord.com/invite/DSYQYAqEUX">Discord</a></li>
+          <li><a class="link" href="https://t.me/zoracles">Telegram</a></li>
+          <li><a class="link" href="https://zoracles.medium.com/">Medium</a></li>
+          <li><a class="link" href="https://twitter.com/z0racles">Twitter</a></li>
+          <li><a class="link" href="https://www.reddit.com/r/Zoracles/">Reddit</a></li>
+          <li><a class="link" href="https://www.youtube.com/channel/UCFx9FbUYK38_HhSm9DL38fQ">YouTube</a></li>
         </ul>
       </div>
       <div class="tabs subscribe">
@@ -47,7 +47,8 @@
 .footer__container {
 	width: 100%;
 	font-family: "RobotoCondensed";
-  background: #131d41;
+	background-image: url(static/stars_section2.png) ;
+	background-color: #131d41;
   color: #fff;
 }
 .intro {
@@ -59,6 +60,8 @@
 .tabs {
 	margin: 50px;
 	// width: 25%;
+	background-image: url(static/stars_section2.png) ;
+	background-color: #131d41;
 }
 .template {
 	margin: 20px 0;
@@ -122,6 +125,8 @@
 }
 .subscribe {
 	width: 300px;
+	background-image: url(static/stars_section2.png) ;
+	background-color: #131d41;
 }
 .input {
   border-radius: 8px;
@@ -144,6 +149,7 @@ input::placeholder {
 	height: 64px;
 	width: 103px;
 	border-radius: 8px;
+	
 
 		&:hover {
       opacity: 0.8;

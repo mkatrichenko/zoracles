@@ -70,7 +70,7 @@ export default {
 	.info__img {
 		&.added_class {
       position: relative;
-      top: -60px;
+      top: -80px;
 	}
 }
 
@@ -88,6 +88,8 @@ export default {
       line-height: 36px;
       letter-spacing: 0.01em;
       color: #ffffff;
+			line-height: 1;
+			margin: 28px 130px;
     }
 
     .info__text {
@@ -98,6 +100,8 @@ export default {
       line-height: 24px;
       letter-spacing: 0.01em;
       color: #ffffff;
+			width: 300px;
+			margin: 0 130px;
     }
   }
 }
@@ -114,6 +118,8 @@ export default {
 	}
 	.container .content__block .info__text {
 		font-size: 16px;
+		margin: 10px -35px;
+		width: 240px;
 	}
 }
 @media screen and (max-width: 991.98px) {
@@ -122,21 +128,33 @@ export default {
 	}
 	.container .content__block .info__title {
 		font-size: 36px;
+		margin: 20px -30px;
 	}
 }
+
 @media (max-width: 767.98px) { 
-	
+	.container .img__block {
+		max-width: 60%;
+	}
 }
+
 @media screen and (max-width: 576px) {
 	.container {
-		display: block;
-		padding: 0 50px;
+		flex-direction: column;
+		&.reverse {
+		flex-direction: column;
 	}
+	.container .img__block {
+		max-width: 60%;
+	}
+	}
+	
 	.container .content__block {
 		margin-bottom: 20px;
 	}
 	.container .content__block .info__title {
 		font-size: 36px;
+		margin: 14px -35px;
 	}
 }
 </style>
