@@ -70,7 +70,7 @@ export default {
 
   .main__btn {
     padding: 16px 60px;
-    font-family: Lato;
+    font-family: "Lato";
     font-weight: 600;
     font-size: 18px;
     line-height: 1.14;
@@ -88,29 +88,44 @@ export default {
 }
 .bg__img {
   width: 100%;
-  max-width: 1920px;
+  // max-width: 1920px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 1200px){
 	.main .main__title {
-		font-size: 24px;
-		margin-bottom: 12px;
+		margin-bottom: 24px;
+		font-size: 48px;
 	}
-	.main .content { 
-		top: 75px;
-		left: 25px;
+	.main .content {
+		top: 180px;
+		left: 90px;
 	}
 	.main .main__text {
-		font-size: 12px;
-		width: 200px;
-		margin-bottom: 8px;
+		width: 400px;
+		font-size: 16px;
 	}
 	.main .main__btn {
-		font-size: 10px;
-		padding: 5px 20px;
+		font-size: 16px;
+		padding: 14px 50px;
 	}
 }
-
+@media screen and (max-width: 991.98px) {
+	.main .main__title {
+		margin-bottom: 24px;
+		font-size: 36px;
+	}
+	.main .content {
+		top: 120px;
+		left: 60px;
+	}
+	.main .main__text {
+		width: 330px;
+	}
+	.main .main__btn {
+		font-size: 14px;
+		padding: 12px 40px;
+	}
+}
 @media screen and (max-width: 767.98px) { 
 	.main .main__title {
 		margin-bottom: 24px;
@@ -124,18 +139,28 @@ export default {
 		width: 300px;
 	}
 }
-
-@media screen and (max-width: 991.98px) {
-		.main .main__title {
-		margin-bottom: 24px;
-		font-size: 36px;
+@media screen and (max-width: 576px) {
+	.main .main__title {
+		font-size: 20px;
+		margin-bottom: 8px;
 	}
-	.main .content {
-		top: 120px;
-		left: 60px;
+	.main .content { 
+		top: 75px;
+		left: 25px;
 	}
 	.main .main__text {
-		width: 330px;
+		font-size: 8px;
+		width: 140px;
+		margin-bottom: 8px;
+		line-height: 1.8;
+	}
+	.main .main__btn {
+		font-size: 10px;
+		padding: 5px 20px;
 	}
 }
+
+
+
+
 </style>

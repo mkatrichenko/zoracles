@@ -5,7 +5,7 @@
     </div>
     <div :class="['container', { reverse: isReversed }]">
       <div class="img__block">
-        <img :src="img" alt="" class="info__img" />
+        <img :src="img" alt="" :class="['info__img', { added_class: isReversed }]"/>
       </div>
       <div class="content__block">
         <h2 class="info__title">{{ title }}</h2>
@@ -67,6 +67,12 @@ export default {
       width: 100%;
     }
   }
+	.info__img {
+		&.added_class {
+      position: relative;
+      top: -60px;
+	}
+}
 
   .content__block {
     display: flex;
@@ -95,6 +101,32 @@ export default {
     }
   }
 }
+@media screen and (max-width: 1200px){
+	.container {
+		max-width: 1000px;
+		justify-content: space-around;
+	}
+	.container .content__block {
+		padding: 0 20px;
+	}
+	.container .content__block .info__title {
+		font-size: 42px;
+	}
+	.container .content__block .info__text {
+		font-size: 16px;
+	}
+}
+@media screen and (max-width: 991.98px) {
+	.container .content__block {
+		padding: 0 20px;
+	}
+	.container .content__block .info__title {
+		font-size: 36px;
+	}
+}
+@media (max-width: 767.98px) { 
+	
+}
 @media screen and (max-width: 576px) {
 	.container {
 		display: block;
@@ -106,8 +138,5 @@ export default {
 	.container .content__block .info__title {
 		font-size: 36px;
 	}
-}
-@media (max-width: 767.98px) { 
-	
 }
 </style>

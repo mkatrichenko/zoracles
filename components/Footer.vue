@@ -152,7 +152,60 @@ input::placeholder {
 .btn a {
 	font-size: 20px;
 }
-
+@media screen and (max-width: 1200px) {
+	.intro{
+		padding: 0;
+	}
+	.container .img__block {
+		margin: 0 25px;
+	}
+	.input {
+		font-size: 14px;
+		height: 48px;
+		width: 150px;
+	}
+	.btn {
+		height: 46px;
+		font-size: 16px;
+		width: 75px;
+	}
+	.btn a {
+		font-size: 20px;
+	}
+	.intro a {
+		font-size: 14px;
+	}
+	.info p {
+		font-size: 14px;
+	}
+	.tabs {
+    margin: 30px;
+	}
+}
+@media screen and (max-width: 991.98px) {
+	.intro{
+		padding: 0;
+	}
+	.container .img__block {
+		margin: 0 25px;
+	}
+	.input {
+		font-size: 14px;
+		height: 48px;
+		width: 150px;
+	}
+	.btn {
+		height: 46px;
+		font-size: 14px;
+		width: 60px;
+	}
+	.info p {
+		font-size: 12px;
+	}
+	.tabs {
+    margin: 30px;
+	}
+}
 @media screen and (max-width: 576px) {
 	.intro {
 		flex-direction: column;
