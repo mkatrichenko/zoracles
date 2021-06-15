@@ -117,6 +117,7 @@ export default {
       line-height: 24px;
       letter-spacing: 0.01em;
       color: #ffffff;
+			width: 350px;
     }
   }
 }
