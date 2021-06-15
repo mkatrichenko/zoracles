@@ -142,7 +142,7 @@ export default {
 @media screen and (max-width: 991.98px) {
   .container {
     .content__block {
-      padding: 0 20px;
+      padding: 0 32px;
       .info__title {
         font-size: 36px;
       }
@@ -153,6 +153,13 @@ export default {
 @media (max-width: 767.98px) {
   .container .img__block {
     max-width: 100%;
+  }
+
+  .container {
+    .content__block {
+      max-width: none;
+      width: 100%;
+    }
   }
 }
 

@@ -11,6 +11,7 @@
       :bg-img="item.bgImg"
       :isReversed="item.isReversed"
       :animationDir="item.animationDir"
+      :class="`block-${index}`"
     />
     <Footer />
   </div>
@@ -82,5 +83,13 @@ body {
   overflow-x: hidden;
   width: 100vw;
   background-color: var(--dark);
+}
+
+.block-0 {
+  padding-top: 40px;
+}
+
+.block-2 {
+  padding-bottom: 40px;
 }
 </style>

@@ -116,12 +116,12 @@ export default {
   &.scrolled {
     background-color: var(--brend);
   }
+    @media screen and (max-width: 991.98px) {
+      padding: 0 30px 0;
+    }
 	@media screen and (max-width: 767px) {
-    padding: 0 30px 0;
+    padding: 0 0;
   }
-	@media screen and (max-width: 991.98px) {
-		padding: 0 30px 0;
-	}
 }
 .header__container {
   display: flex;
@@ -129,6 +129,10 @@ export default {
   align-items: center;
   max-width: 1200px;
   padding: 15px ;
+
+  @media screen and (max-width: 767px) {
+    padding: 15px 25px;
+  }
 }
 
 .logo__container {
