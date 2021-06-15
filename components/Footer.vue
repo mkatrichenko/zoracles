@@ -67,17 +67,16 @@
 	margin: 20px 0;
 }
 .info {
-	width: 400px;
   list-style: none;
   text-decoration: none;
   color: #fff;
 	margin-top: 35px;
 }
 .quick__links {
-	width: 200px;
+	// width: 200px;
 }
 .more__links {
-	width: 200px;
+	// width: 200px;
 }
 .link:hover {
 	color: #FF5547;
@@ -162,6 +161,9 @@ input::placeholder {
 	.intro{
 		padding: 0;
 	}
+	.info {
+		max-width: 100%;
+	}
 	.container .img__block {
 		margin: 0 25px;
 	}
@@ -185,7 +187,7 @@ input::placeholder {
 		font-size: 14px;
 	}
 	.tabs {
-    margin: 30px;
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 991.98px) {
@@ -205,11 +207,14 @@ input::placeholder {
 		font-size: 14px;
 		width: 60px;
 	}
+	.info {
+		max-width: 100%;
+	}
 	.info p {
 		font-size: 12px;
 	}
 	.tabs {
-    margin: 30px;
+		max-width: 100%;
 	}
 }
 @media screen and (max-width: 576px) {
@@ -218,7 +223,7 @@ input::placeholder {
 		padding: 0;
 	}
 	.tabs {
-		margin: 20px 50px;
+		max-width: 100%;
 	}
 	.input {
 		font-size: 12px;
@@ -230,8 +235,11 @@ input::placeholder {
     height: 46px;
     width: 60px;
 	}
+	.info {
+		max-width: 100%;
+	}
 	.info p {
-		max-width: 200px;
+		max-width: 100%;
 	}
 }
 

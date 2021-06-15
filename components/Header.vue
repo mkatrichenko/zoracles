@@ -116,6 +116,12 @@ export default {
   &.scrolled {
     background-color: var(--brend);
   }
+	@media screen and (max-width: 767px) {
+    padding: 0 30px 0;
+  }
+	@media screen and (max-width: 991.98px) {
+		padding: 0 30px 0;
+	}
 }
 .header__container {
   display: flex;
@@ -271,6 +277,9 @@ export default {
   border-radius: 25px;
   align-items: center;
 
+@media screen and (max-width: 767px) {
+    padding: 2px 16px;
+  }
   .btn__text {
     margin-right: 8px;
     font-family: "Lato";
