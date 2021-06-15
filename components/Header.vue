@@ -111,6 +111,7 @@ export default {
   transition: 0.3s background-color ease-out;
   z-index: 10;
   background-color: inherit;
+	padding: 20px;
 
   &.scrolled {
     background-color: var(--brend);
