@@ -128,7 +128,6 @@
   }
 }
 .info {
-  width: 400px;
   list-style: none;
   text-decoration: none;
   color: #fff;
@@ -168,12 +167,7 @@
     }
   }
 }
-.quick__links {
-  width: 200px;
-}
-.more__links {
-  width: 200px;
-}
+
 .link:hover {
   color: #ff5547;
   transition: 0.5s;
