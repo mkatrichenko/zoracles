@@ -51,6 +51,10 @@ export default {
   width: 100%;
   position: relative;
 
+  @media screen and (max-width: 767px) {
+        margin-bottom: 40px;
+      }
+
   .bg {
     position: absolute;
     z-index: 2;
@@ -159,6 +163,7 @@ export default {
     .content__block {
       max-width: none;
       width: 100%;
+      margin-top: 36px;
     }
   }
 }
@@ -177,7 +182,7 @@ export default {
       margin-bottom: 20px;
 
       .info__title {
-        font-size: 36px;
+        font-size: 54px;
         margin: 14px 0;
       }
     }
