@@ -143,13 +143,13 @@ input::placeholder {
 	color: #fff;
 }
 .btn {
-  background: #ff5547;
+  background:#FF5547;
   color: #fff;
 	font-size: 20px;
 	height: 64px;
 	width: 103px;
 	border-radius: 8px;
-	
+	border: 0;
 
 		&:hover {
       opacity: 0.8;

@@ -58,15 +58,15 @@ const NAV_LIST = [
   },
   {
     label: "Data",
-    link: "https://zoracles.com/"
+    link: "https://data.zoracles.com"
   },
   {
     label: "Governance",
-    link: "https://zoracles.com/"
+    link: "https://gov.zoracles.com"
   },
   {
-    label: "Contact",
-    link: "https://zoracles.com/"
+    label: "Contract",
+    link: "https://etherscan.io/token/0xd8e3fb3b08eba982f2754988d70d57edc0055ae6"
   }
 ];
 export default {
@@ -111,7 +111,7 @@ export default {
   transition: 0.3s background-color ease-out;
   z-index: 10;
   background-color: inherit;
-	padding: 20px;
+	padding: 20px 0 0 0;
 
   &.scrolled {
     background-color: var(--brend);
