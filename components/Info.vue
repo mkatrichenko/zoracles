@@ -67,7 +67,7 @@ export default {
   }
 }
 .container {
-  max-width: 1200px;
+  max-width: 906px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -79,21 +79,19 @@ export default {
   }
 
   .img__block {
-    max-width: 35%;
+    max-width: 48%;
 
     &.moved {
       position: relative;
-      top: -30px;
+      top: -80px;
+
+      @media screen and (max-width: 767px) {
+        top: 0;
+      }
     }
 
     img {
       width: 100%;
-    }
-  }
-  .info__img {
-    &.added_class {
-      position: relative;
-      top: -80px;
     }
   }
 
@@ -102,7 +100,8 @@ export default {
     flex-direction: column;
     align-items: flex-start;
     text-align: left;
-    max-width: 300px;
+    max-width: 370px;
+    width: 41%;
 
     .info__title {
       margin-bottom: 32px;
@@ -164,7 +163,7 @@ export default {
       flex-direction: column;
     }
     .img__block {
-      max-width: 60%;
+      max-width: 240px;
     }
 
     .content__block {

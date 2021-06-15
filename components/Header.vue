@@ -10,7 +10,7 @@
             <a :href="item.link" class="nav_link">{{ item.label }}</a>
           </li>
         </ul>
-        <a href="google.com" class="twitter_btn">
+        <a href="https://twitter.com/z0racles" class="twitter_btn">
           <span class="btn__text">Our twitter</span>
           <img src="@/assets/img/twitter.svg" alt="" class="btn__logo" />
         </a>
@@ -214,14 +214,15 @@ export default {
   padding: 0;
   margin-bottom: 16px;
   text-align: left;
-  margin-top: 64px;
+  margin: 70px 0;
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-around;
+  height: 60%;
 
   .nav_link {
-    font-size: 20px;
-    margin-bottom: 8px;
+    font-size: 28px;
     display: block;
   }
 }
@@ -231,7 +232,7 @@ export default {
   width: 18px;
   height: 16px;
   right: 20px;
-  top: 30px;
+  top: 24px;
   cursor: pointer;
   display: none;
   z-index: 12;
@@ -273,10 +274,10 @@ export default {
 
 .cross {
   position: absolute;
-  width: 24px;
-  height: 24px;
+  width: 30px;
+  height: 30px;
   right: 20px;
-  top: 30px;
+  top: 24px;
   cursor: pointer;
   z-index: 12;
 
@@ -301,10 +302,6 @@ export default {
    @media screen and (max-width: 767px) {
     display: block;
     width: 160px;
-  }
-
-@media screen and (max-width: 767px) {
-    padding: 2px 16px;
   }
   .btn__text {
     margin-right: 8px;
