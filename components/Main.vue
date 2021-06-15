@@ -31,11 +31,11 @@ export default {
     console.log(this.animationNode);
 
     lottie.loadAnimation({
-      container: this.animationNode, 
+      container: this.animationNode,
       renderer: "svg",
       loop: true,
       autoplay: true,
-      path: "lottie/main/data.json" 
+      path: "lottie/main/data.json"
     });
   }
 };
@@ -53,7 +53,7 @@ export default {
     left: 182px;
     text-align: left;
     max-width: 525px;
-    z-index: 999999999;
+    z-index: 199;
   }
 
   .main__title {
@@ -87,12 +87,12 @@ export default {
     text-transform: capitalize;
     color: #ffffff;
     background-color: var(--brand);
-    transition: 0.3 opacity ease-out;
     cursor: pointer;
     border-radius: 8px;
+    transition: 0.25 box-shadow ease-out;
 
     &:hover {
-      opacity: 0.8;
+      box-shadow: 0px 2px 4px 3px #cf2f21;
     }
   }
 }

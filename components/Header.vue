@@ -1,5 +1,5 @@
 <template>
-  <header :class="['header', { scrolled: scrollPosition > 400 }]">
+  <header :class="['header', { scrolled: scrollPosition > 20 }]">
     <div class="container header__container">
       <div class="logo__container">
         <img src="@/assets/img/logo.png" alt="" class="logo" />
@@ -109,7 +109,7 @@ export default {
   left: 0;
   right: 0;
   transition: 0.3s background-color ease-out;
-  z-index: 10;
+  z-index: 200;
   background-color: inherit;
 	padding: 20px 0 0 0;
 
@@ -122,7 +122,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  padding: 15px 0;
+  padding: 15px ;
 }
 
 .logo__container {
@@ -133,6 +133,11 @@ export default {
 
   img {
     width: 100%;
+  }
+
+  @media screen and (max-width: 767px) {
+    max-width: 100px;
+    margin-right: 16px;
   }
 }
 
@@ -165,10 +170,6 @@ export default {
 	color: #fff; /*задаём цвет ссылки*/
 	cursor: pointer;
 }
-// .nav_link:hover {
-// 	color: #FF5547;
-// 	transition: 0.5s;
-// }
 .nav_link:after {
 	display: block;
 	position: absolute;
@@ -207,6 +208,16 @@ export default {
   padding: 0;
   margin-bottom: 16px;
   text-align: left;
+  margin-top: 64px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .nav_link {
+    font-size: 20px;
+    margin-bottom: 8px;
+    display: block;
+  }
 }
 
 .burger {
@@ -214,7 +225,7 @@ export default {
   width: 18px;
   height: 16px;
   right: 20px;
-  top: 16px;
+  top: 30px;
   cursor: pointer;
   display: none;
   z-index: 12;
@@ -232,30 +243,34 @@ export default {
   display: none;
   position: absolute;
   right: 0;
+  left: 0;
   top: 0;
   bottom: 0;
-  background-color: var(--brand);
-  transform: translateX(100%);
+  background-color: #161F48;
+  transform: translateY(-100%);
   transition: 0.3s all ease-out;
   height: 100vh;
-  width: 200px;
+  width: 100%;
   padding: 0 12px;
+  z-index: 2000;
 
   &.active {
     transform: none;
   }
 
   @media screen and (max-width: 767px) {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }
 
 .cross {
   position: absolute;
-  width: 18px;
-  height: 16px;
+  width: 24px;
+  height: 24px;
   right: 20px;
-  top: 16px;
+  top: 30px;
   cursor: pointer;
   z-index: 12;
 
@@ -270,6 +285,17 @@ export default {
   background: #148dfd;
   border-radius: 25px;
   align-items: center;
+  transition: 0.25 box-shadow ease-out;
+  
+
+  &:hover {
+    box-shadow: 0px 2px 4px 3px #127adb;
+  }
+
+   @media screen and (max-width: 767px) {
+    display: block;
+    width: 160px;
+  }
 
   .btn__text {
     margin-right: 8px;
