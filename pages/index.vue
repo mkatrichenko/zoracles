@@ -66,7 +66,7 @@ export default {
 };
 </script>
 
-<style>
+<style lang="scss">
 @import "@/assets/scss/variables.scss";
 #app {
   -webkit-font-smoothing: antialiased;
@@ -87,9 +87,17 @@ body {
 
 .block-0 {
   padding-top: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding-top: 100px;
+  }
 }
 
 .block-2 {
   padding-bottom: 40px;
+
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
 }
 </style>
