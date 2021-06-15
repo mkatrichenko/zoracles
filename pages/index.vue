@@ -10,8 +10,9 @@
       :img="item.img"
       :bg-img="item.bgImg"
       :isReversed="item.isReversed"
+      :animationDir="item.animationDir"
     />
-		<Footer/>
+    <Footer />
   </div>
 </template>
 
@@ -23,14 +24,16 @@ const INFO_BLOCKS = [
       "We are building the underlying technology to support trusted NFT Swaps powered by Zora Score which will include Uniswap V3 LP tokens.",
     img: "/info_1.png",
     bgImg: "/stars_1.png",
-    isReversed: false
+    isReversed: false,
+    animationDir: "lottie/1/data.json"
   },
   {
     title: "Algorithmic Credit",
     text:
       "We are building an algorithmic approach to credit. Our credit rating will determine creditworthiness and a API will be used in DeFi ecosystem.",
     img: "/info_2.png",
-    isReversed: true
+    isReversed: true,
+    animationDir: "lottie/2/data.json"
   },
   {
     title: "Decentralized Governance",
@@ -38,20 +41,21 @@ const INFO_BLOCKS = [
       "Our developers just write code. Anyone can contribute to the project or join the growing community. Nobody is in charge.",
     img: "/info_3.png",
     bgImg: "/stars_2.png",
-    isReversed: false
+    isReversed: false,
+    animationDir: "lottie/3/data.json"
   }
 ];
 import Header from "@/components/Header.vue";
 import Main from "@/components/Main.vue";
 import Info from "@/components/Info.vue";
-import Footer from "@/components/Footer.vue"
+import Footer from "@/components/Footer.vue";
 export default {
   name: "App",
   components: {
     Header,
     Main,
     Info,
-		Footer
+    Footer
   },
   data() {
     return {

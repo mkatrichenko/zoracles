@@ -4,8 +4,7 @@
       <img :src="bgImg" alt="" class="bg__img" />
     </div>
     <div :class="['container', { reverse: isReversed }]">
-      <div class="img__block">
-        <img :src="img" alt="" :class="['info__img', { added_class: isReversed }]"/>
+      <div class="img__block" ref="anim">
       </div>
       <div class="content__block">
         <h2 class="info__title">{{ title }}</h2>
@@ -16,6 +15,8 @@
 </template>
 
 <script>
+import lottie from "lottie-web/build/player/lottie";
+
 export default {
   name: "Info",
   props: {
@@ -23,7 +24,25 @@ export default {
     text: String,
     img: String,
     bgImg: String,
-    isReversed: Boolean
+    isReversed: Boolean,
+    animationDir: String
+  },
+  data() {
+    return {
+      animationNode: null
+    };
+  },
+  mounted() {
+    this.animationNode = this.$refs.anim;
+    console.log(this.animationNode);
+
+    lottie.loadAnimation({
+      container: this.animationNode, 
+      renderer: "svg",
+      loop: true,
+      autoplay: true,
+      path: this.animationDir
+    });
   }
 };
 </script>
@@ -67,8 +86,8 @@ export default {
       width: 100%;
     }
   }
-	.info__img {
-		&.added_class {
+  .info__img {
+    &.added_class {
       position: relative;
       top: -80px;
 	}
