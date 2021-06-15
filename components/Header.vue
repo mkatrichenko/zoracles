@@ -31,7 +31,7 @@
           </li>
         </ul>
 
-        <a href="google.com" class="twitter_btn">
+        <a href="https://twitter.com/z0racles" class="twitter_btn">
           <span class="btn__text">Our twitter</span>
           <img src="@/assets/img/twitter.svg" alt="" class="btn__logo" />
         </a>
@@ -46,27 +46,27 @@ import vClickOutside from "v-click-outside";
 const NAV_LIST = [
   {
     label: "Home",
-    link: "/"
+    link: "https://zoracles.com/"
   },
   {
     label: "Swap",
-    link: "/"
+    link: "https://zoracles.com/"
   },
   {
     label: "Zora",
-    link: "/"
+    link: "https://zoracles.com/"
   },
   {
     label: "Data",
-    link: "/"
+    link: "https://zoracles.com/"
   },
   {
     label: "Governance",
-    link: "/"
+    link: "https://zoracles.com/"
   },
   {
     label: "Contact",
-    link: "/"
+    link: "https://zoracles.com/"
   }
 ];
 export default {
@@ -113,7 +113,7 @@ export default {
   background-color: inherit;
 
   &.scrolled {
-    background-color: var(--brand);
+    background-color: var(--brend);
   }
 }
 .header__container {
@@ -121,7 +121,7 @@ export default {
   justify-content: space-between;
   align-items: center;
   max-width: 1200px;
-  padding: 8px 0;
+  padding: 15px 0;
 }
 
 .logo__container {
@@ -149,21 +149,40 @@ export default {
 .nav__container {
   display: flex;
   list-style: none;
+	padding: 0 90px;
 }
 
 .nav_link {
   font-family: "Lato";
   font-style: normal;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 14px;
   line-height: 17px;
-  color: #fff;
   margin: 0 17px;
   text-decoration: none;
+	position: relative;
+	color: #fff; /*задаём цвет ссылки*/
+	cursor: pointer;
 }
-.nav_link:hover {
-	color: #FF5547;
-	transition: 0.5s;
+// .nav_link:hover {
+// 	color: #FF5547;
+// 	transition: 0.5s;
+// }
+.nav_link:after {
+	display: block;
+	position: absolute;
+	left: 0; /*изменить на right:0;, чтобы изменить направление подчёркивания */
+	width: 0;/*задаём длинну линии до наведения курсора*/
+	height: 2px; /*задаём ширину линии*/
+	background-color: #FF5547;
+; /*задаём цвет линии*/
+	content: "";
+	transition: width 0.3s ease-out; /*задаём время анимации*/
+}
+
+.nav_link:hover:after,
+.nav_link:focus:after {
+	width: 100%; /*устанавливаем значение 100% чтобы ссылка подчёркивалась полностью*/
 }
 
 .buy_btn {
